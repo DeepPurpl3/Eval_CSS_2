@@ -4,20 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TemplateJS</title>
-
-    <!-- ---- Links fonts - Comfortaa, Righteous, REM, EB Garamond, Libre Baskerville, Quintessential and Twinkle Star ---- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quintessential&family=REM:ital,wght@0,100..900;1,100..900&family=Righteous&family=Twinkle+Star&display=swap"
       rel="stylesheet"
     />
-
-    <!-- ---- Links to files -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/styles.min.css" />
     <script defer src="./scripts/main.js"></script>
-
-    <!-- ---- Link font awesome ---- -->
     <script
       src="https://kit.fontawesome.com/3379e155de.js"
       crossorigin="anonymous"
@@ -25,15 +21,17 @@
   </head>
   <body>
     <nav>
-      <div>
+      <div class="wrap-nav">
         <a href="#">Elate</a>
-        <div class="is-flex">
+        <div class="is-big linkz">
           <a href="#">Home</a>
           <a href="#">Work</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
         </div>
-        <div class="burger is-mobile"></div>
+        <div class="burger">
+          <i class="fa-solid fa-bars fa-xl" style="color: rgba(82, 211, 170, 1);"></i>
+        </div>
       </div>
     </nav>
     <!-- le header aura le bg avecl'image -->
