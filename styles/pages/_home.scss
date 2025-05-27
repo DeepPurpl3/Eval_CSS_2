@@ -56,9 +56,13 @@ header {
   color: #ffffff;
   text-align: center;
   position: relative;
-//   & ::before{
-//     // background-color: aqua;
-//     }
+  &::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 0.4) 0%, rgba(87, 199, 133, 0.4) 50%, rgba(237, 221, 83, 0.4) 100%);
+    }
   a {
     text-decoration: dotted;
     color: white;
@@ -71,19 +75,27 @@ header {
     translate: -50% -50%;
   }
 }
+.depassage {
+    background-color: #63E6BE;
+    height: 100px;
+}
 .bloc1 {
-    
-    background-color: #52d3aa;
-    height: 400px;
-    
+    margin: auto;
+    // height: 600px;
   .carte {
-    height: 300px;
+    background-color: #fff;
+    height: 330px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 1px 5px rgb(136, 134, 134);
+    
+    
     p{
         color: #7f7f7f;
         font-weight: 300;
@@ -99,26 +111,64 @@ header {
         h3{
             color: white;
         }
+        
+        
     }
-
+    img{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &:hover{
+            opacity: 0.5;
+            display: block;
+            transition: 0.5s;
+        }
+    }
   }
   .carte:first-of-type{
-    background-image: url(/img/img_7.jpg);
-    background-size: cover;
-    background-position: center;
+    &:hover{
+        &::after{
+            content: url(/img/img_7.jpg);
+            position: absolute;
+            z-index: -2;
+
+        }
+    }
   }
   .carte:nth-of-type(2){
-    background-image: url(/img/img_8.jpg);
-    background-size: cover;
-    background-position: center;
+    &:hover{
+        &::after{
+            content: url(/img/img_8.jpg);
+            position: absolute;
+            z-index: -2;
+            
+        }
+    }
   }
   .carte:nth-of-type(3){
-    background-image: url(/img/img_10.jpg);
-    background-size: cover;
-    background-position: center;
+    &:hover{
+        &::after{
+            content: url(/img/img_10.jpg);
+            position: absolute;
+            z-index: -2;
+
+        }
+    }
+    
   }
 }
+.bloc2 {
+    text-align: center;
+    .mongrid{
+        display: grid;
+        grid-template-columns: repeat();
+    }
+}
 @media (min-width: 768px) {
+
+  .carte {
+    margin-top: -5%;
+  }
   .is-flex {
     flex-direction: row;
   }
@@ -128,4 +178,18 @@ header {
   .burger {
     display: none;
   }
+//   .bloc1{
+//     width: 85%;
+//     .carte:first-of-type{
+//         height: 350px;
+//     }
+//     .carte:nth-of-type(2){
+//         height: 450px;
+//     }
+//     .carte:nth-of-type(3){
+//         height: 350px;
+//     }
+
+//   }
+
 }
