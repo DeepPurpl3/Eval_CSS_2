@@ -24,20 +24,19 @@
   }
 }
 .green-btn {
-    background-color: #63E6BE;
-    text-decoration: none;
-    color: white;
-    padding: 2px 4px;
-    width: 120px;
-    height: 35px;
-    border-radius: 5px;
-    font-weight: 400;
-    text-transform:uppercase;
-    &:hover {
-        background-color: transparent;
-        border: solid 1px rgb(255, 255, 255);
-    }
-
+  background-color: #63e6be;
+  text-decoration: none;
+  color: white;
+  padding: 2px 4px;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  &:hover {
+    background-color: transparent;
+    border: solid 1px rgb(255, 255, 255);
+  }
 }
 body {
   font-family: "Source Sans 3", sans-serif;
@@ -56,13 +55,18 @@ header {
   color: #ffffff;
   text-align: center;
   position: relative;
-  &::before{
+  &::before {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg,rgba(42, 123, 155, 0.4) 0%, rgba(87, 199, 133, 0.4) 50%, rgba(237, 221, 83, 0.4) 100%);
-    }
+    background: linear-gradient(
+      90deg,
+      rgba(42, 123, 155, 0.4) 0%,
+      rgba(87, 199, 133, 0.4) 50%,
+      rgba(237, 221, 83, 0.4) 100%
+    );
+  }
   a {
     text-decoration: dotted;
     color: white;
@@ -75,13 +79,16 @@ header {
     translate: -50% -50%;
   }
 }
+main {
+  background-color: #63e6be;
+}
 .depassage {
-    background-color: #63E6BE;
-    height: 100px;
+  background-color: #63e6be;
+  height: 100px;
 }
 .bloc1 {
-    margin: auto;
-    // height: 600px;
+  margin: auto;
+  // height: 600px;
   .carte {
     background-color: #fff;
     height: 330px;
@@ -94,78 +101,158 @@ header {
     position: relative;
     z-index: 10;
     box-shadow: 0px 1px 5px rgb(136, 134, 134);
-    
-    
-    p{
-        color: #7f7f7f;
-        font-weight: 300;
-        
+
+    p {
+      color: #7f7f7f;
+      font-weight: 300;
     }
-    h3{
-        font-weight: 400;
+    h3 {
+      font-weight: 400;
     }
-    &:hover{
-        p{
-            color: white;
-        }
-        h3{
-            color: white;
-        }
-        
-        
+    &:hover {
+      p {
+        color: white;
+      }
+      h3 {
+        color: white;
+      }
     }
-    img{
+    img {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      &:hover {
+        opacity: 0.5;
+        display: block;
+        transition: 0.5s;
+      }
+    }
+  }
+  .carte:first-of-type {
+    &:hover {
+      &::after {
+        content: url(/img/img_7.jpg);
         position: absolute;
-        z-index: -1;
-        opacity: 0;
-        &:hover{
-            opacity: 0.5;
-            display: block;
-            transition: 0.5s;
-        }
+        z-index: -2;
+      }
     }
   }
-  .carte:first-of-type{
-    &:hover{
-        &::after{
-            content: url(/img/img_7.jpg);
-            position: absolute;
-            z-index: -2;
-
-        }
+  .carte:nth-of-type(2) {
+    &:hover {
+      &::after {
+        content: url(/img/img_8.jpg);
+        position: absolute;
+        z-index: -2;
+      }
     }
   }
-  .carte:nth-of-type(2){
-    &:hover{
-        &::after{
-            content: url(/img/img_8.jpg);
-            position: absolute;
-            z-index: -2;
-            
-        }
+  .carte:nth-of-type(3) {
+    &:hover {
+      &::after {
+        content: url(/img/img_10.jpg);
+        position: absolute;
+        z-index: -2;
+      }
     }
-  }
-  .carte:nth-of-type(3){
-    &:hover{
-        &::after{
-            content: url(/img/img_10.jpg);
-            position: absolute;
-            z-index: -2;
-
-        }
-    }
-    
   }
 }
 .bloc2 {
-    text-align: center;
-    .mongrid{
-        display: grid;
-        grid-template-columns: repeat();
+  text-align: center;
+  background-color: #43a3da;
+  color: rgba(255, 255, 255, 0.8);
+  .mongrid {
+    width: 98%;
+    display: grid;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 5%;
+  }
+  figure {
+    border: solid 1px;
+    border-radius: 15px;
+
+    // box-shadow: ;
+    img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
     }
+    figcaption {
+      background-color: white;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      text-align: start;
+      color: black;
+      padding: 5px 8px;
+    }
+    p {
+      color: #7f7f7f;
+    }
+    &:hover {
+      transform: translateY(-15%);
+      transition: 0.3s;
+    }
+  }
+}
+.bloc3 {
+  background-color: #63e6be;
+  text-align: center;
+  height: 900px;
+  .troistete {
+    margin: auto;
+    margin-top: 10%;
+    width: 90%;
+    gap: 2rem;
+    p {
+      color: #7f7f7f;
+    }
+  }
+  .person {
+    margin-top: 5%;
+    flex-direction: column;
+    border: solid 2px white;
+    // height: 350px;
+    position: relative;
+    img {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      border: solid 2px white;
+      position: absolute;
+      top: -20%;
+      z-index: 2;
+    }
+    .wrapeople {
+      margin-top: 20%;
+    }
+    .blackcircle {
+      &:hover {
+        border-radius: 50%;
+        background-color: #413e3e;
+        width: 25px;
+        height: 25px;
+        padding: 5px 9px;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+.bloc4 {
+  background-image: url(/img/full_image_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 25%;
+  .wrapperquatre {
+    height: 500px;
+    background-color: #05040471;
+    align-items: center;
+    justify-content: center;
+    
+  }
 }
 @media (min-width: 768px) {
-
   .carte {
     margin-top: -5%;
   }
@@ -178,18 +265,35 @@ header {
   .burger {
     display: none;
   }
-//   .bloc1{
-//     width: 85%;
-//     .carte:first-of-type{
-//         height: 350px;
-//     }
-//     .carte:nth-of-type(2){
-//         height: 450px;
-//     }
-//     .carte:nth-of-type(3){
-//         height: 350px;
-//     }
+  .bloc2 {
+    .mongrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 70%;
+    }
+  }
+  .bloc4{
+    margin-top: 0;
+  }
+  .wrapperquatre {
+    gap: 25rem;
+  }
+  .bloc5{
+    text-align: center;
+    margin: auto;
+    
+  }
+  //   .bloc1{
+  //     width: 85%;
+  //     .carte:first-of-type{
+  //         height: 350px;
+  //     }
+  //     .carte:nth-of-type(2){
+  //         height: 450px;
+  //     }
+  //     .carte:nth-of-type(3){
+  //         height: 350px;
+  //     }
 
-//   }
-
+  //   }
 }
