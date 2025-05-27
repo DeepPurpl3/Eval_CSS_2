@@ -1,25 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TemplateJS</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TemplateJS</title>
 
-  <!-- ---- Links fonts - Comfortaa, Righteous, REM, EB Garamond, Libre Baskerville, Quintessential and Twinkle Star ---- -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quintessential&family=REM:ital,wght@0,100..900;1,100..900&family=Righteous&family=Twinkle+Star&display=swap" rel="stylesheet">
-  
-  <!-- ---- Links to files -->
-  <link rel="stylesheet" href="styles/styles.min.css">
-  <script defer src="./scripts/main.js"></script>
+    <!-- ---- Links fonts - Comfortaa, Righteous, REM, EB Garamond, Libre Baskerville, Quintessential and Twinkle Star ---- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quintessential&family=REM:ital,wght@0,100..900;1,100..900&family=Righteous&family=Twinkle+Star&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ---- Link font awesome ---- -->
-  <script src="https://kit.fontawesome.com/338ba07762.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<header></header>
-<main></main>
-<footer></footer>
-</body>
+    <!-- ---- Links to files -->
+    <link rel="stylesheet" href="styles/styles.min.css" />
+    <script defer src="./scripts/main.js"></script>
+
+    <!-- ---- Link font awesome ---- -->
+    <script
+      src="https://kit.fontawesome.com/3379e155de.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="#">Elate</a>
+        <div class="is-flex">
+          <a href="#">Home</a>
+          <a href="#">Work</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="burger is-mobile"></div>
+      </div>
+    </nav>
+    <!-- le header aura le bg avecl'image -->
+    <header>
+      <div class="wrapper">
+        <h1>Do Only What You Love.</h1>
+        <p>
+          Elate is a Free HTML5 Bootstrap Template Released
+          <a href="#">Under Creative Commons 3.0</a>
+        </p>
+      </div>
+    </header>
+    <main>
+      <!-- Le premier bloc avec bg blanc + carte flexé  -->
+      <div class="bloc1 is-flex">
+        <div class="carte">
+          <i class="fh5co-intro-icon icon-bulb"></i>
+          <h3>Plan</h3>
+          <p>
+            There's a sign on the wall, But she wants to be sure 'Cause you know
+            sometimes words have two meanings.
+          </p>
+          <a href="#" class="green-btn">Get in touch</a>
+        </div>
+
+        <div class="carte">
+          <i class="fh5co-intro-icon icon-wrench"></i>
+          <h3>Develop</h3>
+          <p>
+            In a tree by the brook. There's a songbird who sings. Sometimes all
+            of our thoughts are misgiving, it makes me wonder.
+          </p>
+          <a href="#" class="green-btn">Click me</a>
+        </div>
+
+        <div class="carte">
+          <i class="fh5co-intro-icon icon-rocket"></i>
+          <h3>Launch</h3>
+          <p>
+            There's a feeling I get. When I look to the west, And my spirit is
+            crying for leaving. In my thoughts I have seen
+          </p>
+          <a href="#" class="green-btn">Why Us</a>
+        </div>
+      </div>
+      <!-- le bloc avec le grid + carte -->
+      <div class="bloc2">
+        <h2>Work</h2>
+        <p>
+          If there's a bustle in your hedgerow. Don't be alarmed now. It's just
+          a spring clean for the May queen.
+        </p>
+        <div class="mongrid">
+          <figure>
+            <img src="./img/work_1.jpg " alt="w1" />
+            <figcaption>Project 1</figcaption>
+            <p>Branding</p>
+          </figure>
+
+          <figure>
+            <img src="./img/work_2.jpg " alt="w1" />
+            <figcaption>Project 2</figcaption>
+            <p>Web</p>
+          </figure>
+
+          <figure>
+            <img src="./img/work_3.jpg " alt="w1" />
+            <figcaption>Project 3</figcaption>
+            <p>Web</p>
+          </figure>
+
+          <figure>
+            <img src="./img/work_4.jpg " alt="w1" />
+            <figcaption>Project 4</figcaption>
+            <p>UI/UX</p>
+          </figure>
+
+          <figure>
+            <img src="./img/work_5.jpg " alt="w5" />
+            <figcaption>Project 1</figcaption>
+            <p>Photography</p>
+          </figure>
+
+          <figure>
+            <img src="./img/work_6.jpg " alt="w6" />
+            <figcaption>Project 2</figcaption>
+            <p>Illustration</p>
+          </figure>
+
+          <figure>
+            <img src="./img/work_7.jpg " alt="w7" />
+            <figcaption>Project 3</figcaption>
+            <p>web</p>
+          </figure>
+
+          <figure>
+            <img src="./img/work_8.jpg " alt="w7" />
+            <figcaption>Project 4</figcaption>
+            <p>Sketch</p>
+          </figure>
+
+          <figure>
+            <img src="./img/work_1.jpg " alt="w7" />
+            <figcaption>Project 2</figcaption>
+            <p>Illustration</p>
+          </figure>
+        </div>
+      </div>
+      <!-- le bloc About et les 3 perso -->
+      <div class="bloc3">
+        <h2>ABOUT</h2>
+        <p>
+          Our weary eyes still stray to the horizon. Though down this road we've
+          been so many times.
+        </p>
+        <div class="3tete is-flex">
+          <div class="person">
+            <img src="./img/person1.jpg" alt="person1" />
+            <h3>Jeanne Smith</h3>
+            <p>Web Designer</p>
+            <br />
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts
+            </p>
+            <div class="icones">
+              <a href="#"
+                ><i class="fa-brands fa-facebook-f" style="color: #ce1414"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+          </div>
+          <div class="person">
+            <img src="./img/person3.jpg" alt="person3" />
+            <h3>Larry Ben</h3>
+            <p>Web Designer</p>
+            <br />
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts
+            </p>
+            <div class="icones">
+              <a href="#"
+                ><i class="fa-brands fa-facebook-f" style="color: #ce1414"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+          </div>
+          <div class="person">
+            <img src="./img/person2.jpg" alt="person2" />
+            <h3>Rob Smith</h3>
+            <p>Web Developer</p>
+            <br />
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts
+            </p>
+            <div class="icones">
+              <a href="#"
+                ><i class="fa-brands fa-facebook-f" style="color: #ce1414"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- le bloc Fun FAct avec l'image en bg// les I du site ne s'affichent pas ! -->
+      <div class="bloc4">
+        <div class="wrapper">
+          <div>
+            <i class="fa-solid fa-briefcase"></i>
+            <h2>89</h2>
+            <p>Finished projects</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>2343409</h2>
+            <p>line of codes</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-mug-hot"></i>
+            <h2>1302</h2>
+            <p>Cup of coffes</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-users"></i>
+            <h2>52</h2>
+            <p>Happy clients</p>
+          </div>
+        </div>
+      </div>
+      <!-- le bloc GET IN touch avec le form -->
+      <div class="bloc5">
+        <h2>Get In Touch</h2>
+        <p>
+          Hello? Hello? Hello? Is there anybody in there? Just nod if you can
+          hear me. Is there anyone at home?
+        </p>
+        <div class="doburu">
+          <div class="contact">
+            <h2>Contact Info</h2>
+            <div class="sac">
+              <div class="is-flex">
+                <i class="fa-solid fa-house"></i>
+                <p>
+                  5555 Love Paradise 56 New Clity 5655, Excel Tower United
+                  Kingdom
+                </p>
+              </div>
+              <div class="is-flex">
+                <i class="fa-solid fa-phone"></i>
+                <p>(123) 465-6789</p>
+              </div>
+              <div class="is-flex">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@yourmail.co</p>
+              </div>
+              <div class="is-flex">
+                <i class="fa-solid fa-globe"></i>
+                <p>freehtml5.com</p>
+              </div>
+            </div>
+          </div>
+          <form>
+            <input type="text">
+            <input type="email">
+            <input type="number">
+            <input type="text" class="enorme">
+            <a href="#" class="green-btn">Send Message</a>
+          </form>
+        </div>
+      </div>
+      <div class="last">
+        © Edited with ♥ by Rhumy
+      </div>
+    </main>
+  </body>
 </html>
